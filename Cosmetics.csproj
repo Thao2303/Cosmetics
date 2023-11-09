@@ -52,11 +52,41 @@
     <Compile Include="GUI\Hoadon.Designer.cs">
       <DependentUpon>Hoadon.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Lichsuban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Lichsuban.Designer.cs">
+      <DependentUpon>Lichsuban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Quanlykhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Quanlykhachhang.Designer.cs">
+      <DependentUpon>Quanlykhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Quanlynhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Quanlynhanvien.Designer.cs">
+      <DependentUpon>Quanlynhanvien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Quanlysanpham.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Quanlysanpham.Designer.cs">
       <DependentUpon>Quanlysanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Quanlytaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Quanlytaikhoan.Designer.cs">
+      <DependentUpon>Quanlytaikhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Saoluu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Saoluu.Designer.cs">
+      <DependentUpon>Saoluu.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Trangchu.cs">
       <SubType>Form</SubType>
@@ -74,6 +104,27 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\Dangnhap.resx">
       <DependentUpon>Dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Hoadon.resx">
+      <DependentUpon>Hoadon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Lichsuban.resx">
+      <DependentUpon>Lichsuban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Quanlykhachhang.resx">
+      <DependentUpon>Quanlykhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Quanlynhanvien.resx">
+      <DependentUpon>Quanlynhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Quanlysanpham.resx">
+      <DependentUpon>Quanlysanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Quanlytaikhoan.resx">
+      <DependentUpon>Quanlytaikhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Saoluu.resx">
+      <DependentUpon>Saoluu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Trangchu.resx">
       <DependentUpon>Trangchu.cs</DependentUpon>

@@ -1,7 +1,7 @@
 ﻿
 namespace Cosmetics.GUI
 {
-    partial class Hoadon
+    partial class Quanlykhachhang
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +31,13 @@ namespace Cosmetics.GUI
         {
             this.SuspendLayout();
             // 
-            // Hoadon
+            // Quanlykhachhang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1167, 626);
-            this.Name = "Hoadon";
-            this.Text = "Hoadon";
+            this.Name = "Quanlykhachhang";
+            this.Text = "Quanlykhachhang";
             this.ResumeLayout(false);
 
         }

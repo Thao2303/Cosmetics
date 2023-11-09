@@ -38,13 +38,16 @@ namespace Cosmetics
             this.btLichsu = new System.Windows.Forms.Button();
             this.btSaoluu = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btMuahang = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnuHeThong = new System.Windows.Forms.ToolStripMenuItem();
             this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel_body = new System.Windows.Forms.Panel();
+            this.sQLXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xMLSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dữLiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +76,7 @@ namespace Cosmetics
             this.btQLSP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btQLSP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btQLSP.UseVisualStyleBackColor = false;
+            this.btQLSP.Click += new System.EventHandler(this.btQLSP_Click);
             // 
             // btQLNV
             // 
@@ -89,6 +93,7 @@ namespace Cosmetics
             this.btQLNV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btQLNV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btQLNV.UseVisualStyleBackColor = false;
+            this.btQLNV.Click += new System.EventHandler(this.btQLNV_Click);
             // 
             // btQLKH
             // 
@@ -106,6 +111,7 @@ namespace Cosmetics
             this.btQLKH.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btQLKH.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btQLKH.UseVisualStyleBackColor = false;
+            this.btQLKH.Click += new System.EventHandler(this.btQLKH_Click);
             // 
             // btQLTK
             // 
@@ -122,6 +128,7 @@ namespace Cosmetics
             this.btQLTK.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btQLTK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btQLTK.UseVisualStyleBackColor = false;
+            this.btQLTK.Click += new System.EventHandler(this.btQLTK_Click);
             // 
             // btLichsu
             // 
@@ -138,6 +145,7 @@ namespace Cosmetics
             this.btLichsu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btLichsu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btLichsu.UseVisualStyleBackColor = false;
+            this.btLichsu.Click += new System.EventHandler(this.btLichsu_Click);
             // 
             // btSaoluu
             // 
@@ -154,26 +162,18 @@ namespace Cosmetics
             this.btSaoluu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btSaoluu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btSaoluu.UseVisualStyleBackColor = false;
+            this.btSaoluu.Click += new System.EventHandler(this.btSaoluu_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Script", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightPink;
-            this.label1.Location = new System.Drawing.Point(374, 38);
+            this.label1.Location = new System.Drawing.Point(642, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(516, 99);
+            this.label1.Size = new System.Drawing.Size(495, 105);
             this.label1.TabIndex = 2;
             this.label1.Text = "Rose Cosmetics";
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(273, 159);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(724, 352);
-            this.panel2.TabIndex = 3;
             // 
             // btMuahang
             // 
@@ -191,6 +191,7 @@ namespace Cosmetics
             this.btMuahang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btMuahang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btMuahang.UseVisualStyleBackColor = false;
+            this.btMuahang.Click += new System.EventHandler(this.btMuahang_Click);
             // 
             // menuStrip1
             // 
@@ -198,11 +199,12 @@ namespace Cosmetics
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuHeThong,
+            this.dữLiệuToolStripMenuItem,
             this.aboutUsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1110, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1496, 27);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -215,7 +217,7 @@ namespace Cosmetics
             this.mnuHeThong.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.mnuHeThong.ForeColor = System.Drawing.Color.PaleVioletRed;
             this.mnuHeThong.Name = "mnuHeThong";
-            this.mnuHeThong.Size = new System.Drawing.Size(87, 26);
+            this.mnuHeThong.Size = new System.Drawing.Size(87, 23);
             this.mnuHeThong.Text = "Tài khoản";
             // 
             // đổiMậtKhẩuToolStripMenuItem
@@ -238,17 +240,53 @@ namespace Cosmetics
             this.aboutUsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.aboutUsToolStripMenuItem.ForeColor = System.Drawing.Color.PaleVioletRed;
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(82, 26);
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(82, 23);
             this.aboutUsToolStripMenuItem.Text = "About us";
+            // 
+            // panel_body
+            // 
+            this.panel_body.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_body.BackgroundImage")));
+            this.panel_body.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel_body.Location = new System.Drawing.Point(273, 159);
+            this.panel_body.Name = "panel_body";
+            this.panel_body.Size = new System.Drawing.Size(1185, 673);
+            this.panel_body.TabIndex = 3;
+            // 
+            // sQLXMLToolStripMenuItem
+            // 
+            this.sQLXMLToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.sQLXMLToolStripMenuItem.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.sQLXMLToolStripMenuItem.Name = "sQLXMLToolStripMenuItem";
+            this.sQLXMLToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sQLXMLToolStripMenuItem.Text = "SQL -> XML";
+            // 
+            // xMLSQLToolStripMenuItem
+            // 
+            this.xMLSQLToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.xMLSQLToolStripMenuItem.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.xMLSQLToolStripMenuItem.Name = "xMLSQLToolStripMenuItem";
+            this.xMLSQLToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.xMLSQLToolStripMenuItem.Text = "XML ->SQL";
+            // 
+            // dữLiệuToolStripMenuItem
+            // 
+            this.dữLiệuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sQLXMLToolStripMenuItem,
+            this.xMLSQLToolStripMenuItem});
+            this.dữLiệuToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.dữLiệuToolStripMenuItem.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.dữLiệuToolStripMenuItem.Name = "dữLiệuToolStripMenuItem";
+            this.dữLiệuToolStripMenuItem.Size = new System.Drawing.Size(70, 23);
+            this.dữLiệuToolStripMenuItem.Text = "Dữ liệu";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1110, 610);
+            this.ClientSize = new System.Drawing.Size(1496, 976);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel_body);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btSaoluu);
             this.Controls.Add(this.btLichsu);
@@ -278,13 +316,16 @@ namespace Cosmetics
         private System.Windows.Forms.Button btLichsu;
         private System.Windows.Forms.Button btSaoluu;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btMuahang;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mnuHeThong;
         private System.Windows.Forms.ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
+        private System.Windows.Forms.Panel panel_body;
+        private System.Windows.Forms.ToolStripMenuItem dữLiệuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sQLXMLToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem xMLSQLToolStripMenuItem;
     }
 }
 
