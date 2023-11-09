@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\Hoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Hoadon.Designer.cs">
+      <DependentUpon>Hoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Quanlysanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Quanlysanpham.Designer.cs">
+      <DependentUpon>Quanlysanpham.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Trangchu.cs">
       <SubType>Form</SubType>
     </Compile>
